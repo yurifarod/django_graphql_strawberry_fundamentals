@@ -1,0 +1,31 @@
+### PSQL do projeto
+# psql -U postgres -d inventory
+
+### Local Python
+# Instalar com pip
+pip install --break-system-packages --user
+
+### Docker
+# Build and Start Docker Containers
+sudo docker compose up --build -d
+
+# Another option to Build and Start
+sudo docker compose build
+sudo docker compose up -d
+
+
+#deletar containers
+sudo docker system prune -a -f
+
+# Listar Containers
+sudo docker ps
+
+#Listar codigo dos Containers
+sudocker ps -a -q 
+
+# Parar todos os Containers
+sudo docker stop $(codigo)
+
+# Access Django's Shell
+sudo docker exec -it django_app sh
+
